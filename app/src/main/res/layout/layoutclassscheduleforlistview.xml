@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#04102b">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/tdslogo"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#060606"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#101010"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:id="@+id/classtopicname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:text="SAMPLE"
+                android:gravity="center"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#060606"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#101010"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:id="@+id/classlecturenumber"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lecture"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/classtime"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lecture"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/classvenue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lecture"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/classteacher"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lecture"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

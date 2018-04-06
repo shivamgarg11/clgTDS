@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shivam.tds.Fragments.about"
+    android:background="#04102b">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABOUT"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:textSize="50dp"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fff"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fff"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                android:alpha="0.8"
+                android:text="The society mainly focuses on transforming you into a programming geek by developing your aptitude. At the end of course you will be aware of the basic as well as advanced concepts in programming languages like C++ , JAVA etc."/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MISSION"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:textSize="50dp"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fff"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fff"
+                android:alpha="0.9"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                android:alpha="0.8"
+                android:text="The Debugging Society has been initiated with the purpose to develop a passion for coding through regular assignments, weekly quizzes and create a network of avid programmers who are willing to learn and share knowledge."/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
