@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "548644786448",
+    "firebase_url": "https://tdsfirebaseproject-e489a.firebaseio.com",
+    "project_id": "tdsfirebaseproject-e489a",
+    "storage_bucket": "tdsfirebaseproject-e489a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548644786448:android:c4005adf517b6a25",
+        "android_client_info": {
+          "package_name": "com.example.shivam.tds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548644786448-qanqtud44erag06ucsqlnuso83pisi5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shivam.tds",
+            "certificate_hash": "73b95d1dfae420e03dad6dff2d89ca279acc5995"
+          }
+        },
+        {
+          "client_id": "548644786448-r365s031orujace77dr4ekncq4v9cm6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtOVXbnScgb0hXM2UR5cD6czYwcBrNMX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548644786448-r365s031orujace77dr4ekncq4v9cm6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

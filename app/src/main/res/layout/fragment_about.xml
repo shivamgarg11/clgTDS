@@ -86,7 +86,10 @@
                 android:alpha="0.8"
                 android:text="The Debugging Society has been initiated with the purpose to develop a passion for coding through regular assignments, weekly quizzes and create a network of avid programmers who are willing to learn and share knowledge."/>
 
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    />
         </LinearLayout>
     </ScrollView>
 

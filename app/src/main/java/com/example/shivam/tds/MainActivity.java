@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.shivam.tds.Fragments.about;
+import com.example.shivam.tds.Fragments.class_schedule;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -103,6 +104,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.events) {
 
         } else if (id == R.id.classschedule) {
+            android.app.FragmentManager fragmentManager = getFragmentManager();
+            class_schedule frag = new class_schedule(MainActivity.this);
+            fragmentManager.beginTransaction().replace(R.id.frame, frag).commit();
 
         } else if (id == R.id.questionofday) {
 
