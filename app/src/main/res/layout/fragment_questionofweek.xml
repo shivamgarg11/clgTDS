@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shivam.tds.Fragments.questionofweek"
+    tools:context="com.example.shivam.tds.Fragments.questionofweekfragment"
     android:orientation="vertical"
     android:background="#04102b">
 
@@ -31,12 +31,20 @@
         android:background="#fff"
         android:alpha="0.9"/>
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progressionbarquestionofweek"/>
+
 
     <ListView
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/listviewquestionofweek"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp">
 
     </ListView>
 

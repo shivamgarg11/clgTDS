@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#04102b">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         app:cardCornerRadius="40dp">
 
         <LinearLayout
@@ -60,32 +59,57 @@
                 android:alpha="0.9"/>
 
             <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUESTION:"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:padding="5dp"
                 android:id="@+id/questiondetail"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Description"
-                android:textSize="20dp"
+                android:background="#f1eeee"/>
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAMPLE INPUT:"
+                style="@style/TextAppearance.AppCompat.Headline"
                 android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/questioninput"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="input"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:background="#f1eeee"
+                android:padding="5dp"/>
+
+            <TextView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAMPLE OUTPUT:"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/questionoutput"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_margin="5dp"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="output"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:background="#f1eeee"
+                android:padding="5dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
