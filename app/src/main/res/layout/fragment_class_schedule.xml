@@ -70,6 +70,24 @@
         android:background="#fff"
         android:alpha="0.9"/>
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/classprogressionbar"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/selectlanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT LANGUAGE TO SEE SCHEDULE"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_margin="50dp"/>
+
 
 <ListView
     android:layout_margin="20dp"

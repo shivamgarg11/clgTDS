@@ -8,8 +8,10 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.shivam.tds.R;
 import com.example.shivam.tds.adaptors.classscheduleadaptor;
@@ -29,9 +31,12 @@ public class class_schedule extends Fragment {
 
     ArrayList<classschedule> arrayList=new ArrayList<>();
     ListView li;
-    String type;
     DatabaseReference ref;
     Context context;
+    Button java,cpp;
+    ProgressBar p;
+    TextView selectlanguage;
+
 
     public class_schedule() {
         // Required empty public constructor
@@ -40,7 +45,7 @@ public class class_schedule extends Fragment {
     @SuppressLint("ValidFragment")
     public class_schedule(Context context) {
         this.context=context;
-        // Required empty public constructor
+
     }
 
 
@@ -51,26 +56,73 @@ public class class_schedule extends Fragment {
         View rootview= inflater.inflate(R.layout.fragment_class_schedule, container, false);
 
         li=rootview.findViewById(R.id.listviewclassschedule);
+        java=rootview.findViewById(R.id.javaclassbtn);
+        cpp=rootview.findViewById(R.id.cppclassbtn);
+        p=rootview.findViewById(R.id.classprogressionbar);
+        selectlanguage=rootview.findViewById(R.id.selectlanguage);
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        ref=database.getReference("class_schedule");
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for(DataSnapshot snap:dataSnapshot.getChildren()){
-                    classschedule products=snap.getValue(classschedule.class);
-                    arrayList.add(products);
-                }
-                classscheduleadaptor adaptors=new classscheduleadaptor(arrayList,context);
-                li.setAdapter(adaptors);
-            }
 
+        java.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onClick(View v) {
+                //progress();
+                p.setVisibility(View.VISIBLE);
+                selectlanguage.setVisibility(View.GONE);
+                arrayList.clear();
+                ref=database.getReference("javaclassschedule");
+                ref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for(DataSnapshot snap:dataSnapshot.getChildren()){
+                            classschedule products=snap.getValue(classschedule.class);
+                            arrayList.add(products);
+                        }
+                        classscheduleadaptor adaptors=new classscheduleadaptor(arrayList,context);
+                        li.setAdapter(adaptors);
+                        p.setVisibility(View.GONE);
+                    }
 
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
 
+        cpp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectlanguage.setVisibility(View.GONE);
+                p.setVisibility(View.VISIBLE);
+                arrayList.clear();
+                ref=database.getReference("cppclassschedule");
+                ref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for(DataSnapshot snap:dataSnapshot.getChildren()){
+                            classschedule products=snap.getValue(classschedule.class);
+                            arrayList.add(products);
+                        }
+                        classscheduleadaptor adaptors=new classscheduleadaptor(arrayList,context);
+                        li.setAdapter(adaptors);
+                        p.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+            }
+        });
+
+
+
+
     return rootview;}
+
+
 
 }
